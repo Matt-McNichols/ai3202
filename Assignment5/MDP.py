@@ -302,7 +302,6 @@ class graph(object):
 #        for index in self.world_master[i][:]:
 #          if (index.delta > 5)is True:
 #            self.master_done=0;
-    self.printInfo();
     self.reconstruct();
 ####################################################################################################
 
