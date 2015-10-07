@@ -297,12 +297,12 @@ class graph(object):
 #      else:
 #print "count",count;
 #        print "delta: ",self.master_delta;
-#        self.printInfo();
 #   FIXME: matt
 #      for i in range(self.master_row):
 #        for index in self.world_master[i][:]:
 #          if (index.delta > 5)is True:
 #            self.master_done=0;
+    self.printInfo();
     self.reconstruct();
 ####################################################################################################
 
@@ -314,8 +314,9 @@ class graph(object):
     c=self.master_start[1];
     while(([r,c] != self.master_end) is True):
       print "location: ",self.world_master[r][c].location,"utility score: ",self.world_master[r][c].V;
+      old_r=r;
       r=self.world_master[r][c].parent[0];
-      c=self.world_master[r][c].parent[1];
+      c=self.world_master[old_r][c].parent[1];
 
 
     r=self.world_master[r][c].location[0];
