@@ -1,4 +1,4 @@
 ---
 Assignment 5
 
-as you make e smaller, the utilitie scores change but their differences become very small. I was not able to fi
+As you make e smaller, the utility scores change but their differences become very small. As you make the e larger, the utility scores change dramatically and if you make e large enough, there will not be a clear path from start node to end node.
